@@ -9,7 +9,9 @@
 
   <properties>
     <magnoliaVersion>5.3.8</magnoliaVersion>
-    <javaVersion>1.6</javaVersion>
+    <javaVersion>1.8</javaVersion>
+       <jetty.version>9.2.9.v20150224</jetty.version>
+   
   </properties>
 
   <!-- Fill the following in, so you can use the release plugin -->
@@ -53,6 +55,19 @@
           <target>${javaVersion}</target>
         </configuration>
       </plugin>
+      
+      <!-- JETTY -->
+      <plugin>
+  <groupId>org.eclipse.jetty</groupId>
+  <artifactId>jetty-maven-plugin</artifactId>
+  <version>${jetty.version}</version>
+  <!-- 
+  <configuration>
+    <jettyXml>jetty.xml,jetty-ssl.xml,jetty-https.xml</jettyXml>
+  </configuration>
+   -->
+</plugin>
+
     </plugins>
 
     <!-- default resources configuration which will filter your module descriptors -->
