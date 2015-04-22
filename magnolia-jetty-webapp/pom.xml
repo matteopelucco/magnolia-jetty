@@ -17,16 +17,21 @@
 		<!-- Overlay Magnolia Empty Webapp. Alternatively, use the bundled-webapp 
 			or the enterprise-webapp. Dependencies versions are already imported by parent, 
 			so no need to replicate here. -->
+
+		<!-- <dependency> <groupId>info.magnolia</groupId> <artifactId>magnolia-empty-webapp</artifactId> 
+			<type>pom</type> </dependency> <dependency> <groupId>info.magnolia</groupId> 
+			<artifactId>magnolia-empty-webapp</artifactId> <type>war</type> </dependency> -->
 		<dependency>
-			<groupId>info.magnolia</groupId>
-			<artifactId>magnolia-empty-webapp</artifactId>
+			<groupId>info.magnolia.bundle</groupId>
+			<artifactId>magnolia-bundled-webapp</artifactId>
 			<type>pom</type>
 		</dependency>
 		<dependency>
-			<groupId>info.magnolia</groupId>
-			<artifactId>magnolia-empty-webapp</artifactId>
+			<groupId>info.magnolia.bundle</groupId>
+			<artifactId>magnolia-bundled-webapp</artifactId>
 			<type>war</type>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -46,8 +51,28 @@
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>${jetty.version}</version>
 				<configuration>
-					<jettyXml>${project.basedir}/src/main/jetty-config/jetty.xml,${project.basedir}/src/main/jetty-config/jetty-http.xml,${project.basedir}/src/main/jetty-config/jetty-ssl.xml,${project.basedir}/src/main/jetty-config/jetty-https.xml</jettyXml>
+					<webAppConfig>
+						<contextPath>/magnoliaAuthor</contextPath>
+					</webAppConfig>
+					<jettyXml>${project.basedir}/src/main/jetty-config/jetty.xml,${project.basedir}/src/main/jetty-config/jetty-http.xml,${project.basedir}/src/main/jetty-config/jetty-ssl.xml,${project.basedir}/src/main/jetty-config/jetty-https.xml</jettyXml><!-- ,${project.basedir}/src/main/jetty-config/jetty-http2.xml -->
+					<!-- <jvmArgs>-Xbootclasspath/p:${settings.localRepository}/org/mortbay/jetty/alpn/alpn-boot/${jetty.alpn.version}/alpn-boot-${jetty.alpn.version}.jar</jvmArgs>  -->
 				</configuration>
+
+				<!-- 
+				<dependencies>
+					<dependency>
+						<groupId>org.eclipse.jetty.http2</groupId>
+						<artifactId>http2-server</artifactId>
+						<version>${jetty.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.eclipse.jetty</groupId>
+						<artifactId>jetty-alpn-server</artifactId>
+						<version>${jetty.version}</version>
+					</dependency>
+				</dependencies>
+				-->
+
 			</plugin>
 
 		</plugins>
