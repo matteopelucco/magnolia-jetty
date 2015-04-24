@@ -12,7 +12,7 @@
 		<magnoliaVersion>5.3.8</magnoliaVersion>
 		<javaVersion>1.8</javaVersion>
 		<jetty.version>9.3.0.M2</jetty.version>
-		<!-- <jetty.alpn.version>8.1.3.v20150130</jetty.alpn.version> -->
+		<jetty.alpn.version>8.1.3.v20150130</jetty.alpn.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 

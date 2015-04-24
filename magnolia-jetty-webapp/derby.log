@@ -1,0 +1,144 @@
+----------------------------------------------------------------
+2015-04-24 16:25:10.732 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\version\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:11.595 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 888c4022-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\default\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:12.317 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 6965c036-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\website\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:12.562 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 4aa3404a-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\config\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:12.765 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 2c44c05e-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\users\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:12.921 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 0e4a4072-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\userroles\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:13.094 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance f0b3c086-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\usergroups\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:13.236 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance d381409a-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\mgnlSystem\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:13.377 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance b6b2c0ae-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\mgnlVersion\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:13.489 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 9a4840c2-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\googleSitemaps\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:13.623 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 7e41c0d6-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\data\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:13.756 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 629f40ea-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\templates\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:13.869 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 4760c0fe-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\profiles\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:13.994 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 2c864112-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\resources\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:14.173 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 120fc126-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\dms\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:14.315 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance f7fd413a-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\imaging\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:14.458 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance de4ec14e-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\forum\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:14.594 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance c5044162-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\dam\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:14.729 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance ac1dc176-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\rss\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:14.860 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 939b418a-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\messages\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:14.967 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 7b7cc19e-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\category\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:15.088 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 63c241b2-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\scripts\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:15.270 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 4c6bc1c6-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\contacts\db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2015-04-24 16:25:15.390 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance 357941da-014c-ec3f-40f3-0000164be400
+on database directory C:\dev\workspaces\matteo\magnolia-jetty-webapp-home\repositories\magnolia\workspaces\tasks\db  
+
+Database Class Loader started - derby.database.classpath=''

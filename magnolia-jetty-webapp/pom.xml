@@ -31,6 +31,13 @@
 			<artifactId>magnolia-bundled-webapp</artifactId>
 			<type>war</type>
 		</dependency>
+		
+		<!-- ALPN boot -->
+		<dependency>
+			<groupId>org.mortbay.jetty.alpn</groupId>
+			<artifactId>alpn-boot</artifactId>
+			<version>${jetty.alpn.version}</version>
+		</dependency>
 
 	</dependencies>
 
@@ -54,11 +61,20 @@
 					<webAppConfig>
 						<contextPath>/magnoliaAuthor</contextPath>
 					</webAppConfig>
-					<jettyXml>${project.basedir}/src/main/jetty-config/jetty.xml,${project.basedir}/src/main/jetty-config/jetty-http.xml,${project.basedir}/src/main/jetty-config/jetty-ssl.xml,${project.basedir}/src/main/jetty-config/jetty-https.xml</jettyXml><!-- ,${project.basedir}/src/main/jetty-config/jetty-http2.xml -->
-					<!-- <jvmArgs>-Xbootclasspath/p:${settings.localRepository}/org/mortbay/jetty/alpn/alpn-boot/${jetty.alpn.version}/alpn-boot-${jetty.alpn.version}.jar</jvmArgs>  -->
+					
+					<!-- ,${project.basedir}/src/main/jetty-config/jetty-http2.xml -->
+					<!-- Working settings, but http/1.1 -->
+					<jettyXml>${project.basedir}/src/main/jetty-config/jetty.xml,${project.basedir}/src/main/jetty-config/jetty-http.xml,${project.basedir}/src/main/jetty-config/jetty-ssl.xml,${project.basedir}/src/main/jetty-config/jetty-https.xml</jettyXml>
+					
+					<!-- Guillaume -->
+					<!-- ,${project.basedir}/src/main/jetty-config/jetty-guillaume-2.xml,${project.basedir}/src/main/jetty-config/jetty-guillaume-3.xml -->
+					<!-- 
+					<jettyXml>${project.basedir}/src/main/jetty-config/jetty-guillaume-0.xml, ${project.basedir}/src/main/jetty-config/jetty-guillaume-1.xml</jettyXml>
+					-->					
+					<jvmArgs>-Xbootclasspath/p:${settings.localRepository}/org/mortbay/jetty/alpn/alpn-boot/${jetty.alpn.version}/alpn-boot-${jetty.alpn.version}.jar</jvmArgs>
 				</configuration>
-
-				<!-- 
+				
+				<!-- http2 dependencies -->
 				<dependencies>
 					<dependency>
 						<groupId>org.eclipse.jetty.http2</groupId>
@@ -71,8 +87,6 @@
 						<version>${jetty.version}</version>
 					</dependency>
 				</dependencies>
-				-->
-
 			</plugin>
 
 		</plugins>
