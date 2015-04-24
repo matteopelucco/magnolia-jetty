@@ -1,5 +1,5 @@
 # magnolia-jetty
-Magnolia and Jetty togheter
+Magnolia and Jetty together
 
 - artifact, project (pom + webapp) generation
 - .git ignore
