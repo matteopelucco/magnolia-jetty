@@ -62,6 +62,7 @@
 						<contextPath>/magnoliaAuthor</contextPath>
 					</webAppConfig>
 					
+					<!-- this must run on HTTP/2  ::: https://localhost:8443/magnoliaAuthor/demo-project -->
 					<!-- ,${project.basedir}/src/main/jetty-config/jetty-http2.xml -->
 					<!-- Working settings, but http/1.1 -->
 					<jettyXml>${project.basedir}/src/main/jetty-config/jetty.xml,${project.basedir}/src/main/jetty-config/jetty-http.xml,${project.basedir}/src/main/jetty-config/jetty-ssl.xml,${project.basedir}/src/main/jetty-config/jetty-https.xml</jettyXml>
