@@ -11,11 +11,6 @@
 	<artifactId>magnolia-jetty-webapp</artifactId>
 	<name>${artifactId}: webapp</name>
 	<packaging>war</packaging>
-	
-	<properties>
-		<jetty.config>${project.basedir}/src/main/jetty-config/http1</jetty.config>
-	</properties>
-	
 	<dependencies>
 		<!-- Add your project specific dependencies here: -->
 
@@ -76,11 +71,20 @@
 					
 					<!-- this must run on HTTP/2  ::: https://localhost:8443/magnoliaAuthor/demo-project -->
 					
-					<jettyXml>${jetty.config}/jetty.xml,${jetty.config}/jetty-http.xml,${jetty.config}/jetty-ssl.xml,${jetty.config}/jetty-https.xml</jettyXml>
-
-					<!-- 
+					<!-- ,${project.basedir}/src/main/jetty-config/jetty-http2.xml -->
+					<!-- Working settings, but http/1.1 
+					
+					,${project.basedir}/src/main/jetty-config/jetty-https.xml
+					
+					-->
+					<jettyXml>${project.basedir}/src/main/jetty-config/jetty.xml,${project.basedir}/src/main/jetty-config/jetty-http.xml,${project.basedir}/src/main/jetty-config/jetty-ssl.xml,${project.basedir}/src/main/jetty-config/jetty-http2.xml</jettyXml>
+					 
+					<!-- Guillaume -->
+					<!-- ,${project.basedir}/src/main/jetty-config/jetty-guillaume-2.xml,${project.basedir}/src/main/jetty-config/jetty-guillaume-3.xml -->
+					<!--  
+					<jettyXml>${project.basedir}/src/main/jetty-config/jetty-guillaume-0.xml,${project.basedir}/src/main/jetty-config/jetty-guillaume-1.xml,${project.basedir}/src/main/jetty-config/jetty-guillaume-2.xml</jettyXml>
+					-->					
 					<jvmArgs>-Xbootclasspath/p:${settings.localRepository}/org/mortbay/jetty/alpn/alpn-boot/${jetty.alpn.version}/alpn-boot-${jetty.alpn.version}.jar</jvmArgs>
-					 -->
 				</configuration>
 				
 				<!-- http2 dependencies -->
