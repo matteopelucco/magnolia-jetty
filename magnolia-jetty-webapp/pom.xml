@@ -13,7 +13,7 @@
 	<packaging>war</packaging>
 	
 	<properties>
-		<jetty.config>${project.basedir}/src/main/jetty-config/http1</jetty.config>
+		<jetty.config>${project.basedir}/src/main/jetty-config/http2</jetty.config>
 	</properties>
 	
 	<dependencies>
@@ -25,9 +25,7 @@
 
 		<!-- <dependency> <groupId>info.magnolia</groupId> <artifactId>magnolia-empty-webapp</artifactId> 
 			<type>pom</type> </dependency> <dependency> <groupId>info.magnolia</groupId> 
-			<artifactId>magnolia-empty-webapp</artifactId> <type>war</type> </dependency> -->
-		
-		<!--  
+			<artifactId>magnolia-empty-webapp</artifactId> <type>war</type> </dependency> --> 
 		
 		<dependency>
 			<groupId>info.magnolia.bundle</groupId>
@@ -40,10 +38,6 @@
 			<type>war</type>
 		</dependency>
 		
-		
-		-->
-		
-		
 		<!-- ALPN boot -->
 		<dependency>
 			<groupId>org.mortbay.jetty.alpn</groupId>
@@ -51,6 +45,18 @@
 			<version>${jetty.alpn.version}</version>
 		</dependency>
 
+
+<dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>3.0</version>
+    </dependency>
+    <dependency>
+        <groupId>com.google.inject.extensions</groupId>
+        <artifactId>guice-servlet</artifactId>
+        <version>3.0</version>
+    </dependency>
+    
 	</dependencies>
 
 	<build>
@@ -76,25 +82,35 @@
 					
 					<!-- this must run on HTTP/2  ::: https://localhost:8443/magnoliaAuthor/demo-project -->
 					
-					<jettyXml>${jetty.config}/jetty.xml,${jetty.config}/jetty-http.xml,${jetty.config}/jetty-ssl.xml,${jetty.config}/jetty-https.xml</jettyXml>
-
-					<!-- 
+					<jettyXml>${jetty.config}/jetty.xml</jettyXml>
 					<jvmArgs>-Xbootclasspath/p:${settings.localRepository}/org/mortbay/jetty/alpn/alpn-boot/${jetty.alpn.version}/alpn-boot-${jetty.alpn.version}.jar</jvmArgs>
-					 -->
+					<contextXml>${jetty.config}/jetty-context.xml</contextXml>
 				</configuration>
 				
-				<!-- http2 dependencies -->
+				 <!-- Transitive dependencies -->
+                    
+                    
 				<dependencies>
 					<dependency>
-						<groupId>org.eclipse.jetty.http2</groupId>
-						<artifactId>http2-server</artifactId>
-						<version>${jetty.version}</version>
-					</dependency>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-api</artifactId>
+                        <version>${slf4j.version}</version>
+                    </dependency>
 					<dependency>
-						<groupId>org.eclipse.jetty</groupId>
-						<artifactId>jetty-alpn-server</artifactId>
-						<version>${jetty.version}</version>
-					</dependency>
+                        <groupId>org.eclipse.jetty</groupId>
+                        <artifactId>jetty-server</artifactId>
+                        <version>${jetty.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.eclipse.jetty.http2</groupId>
+                        <artifactId>http2-server</artifactId>
+                        <version>${jetty.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.eclipse.jetty</groupId>
+                        <artifactId>jetty-alpn-server</artifactId>
+                        <version>${jetty.version}</version>
+                    </dependency>
 				</dependencies>
 			</plugin>
 

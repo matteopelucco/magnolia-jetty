@@ -3,10 +3,10 @@
 
 <Configure id="Server" class="org.eclipse.jetty.server.Server">
     <New id="sslContextFactory" class="org.eclipse.jetty.util.ssl.SslContextFactory">
-        <Set name="KeyStorePath"><SystemProperty name="jetty.base" default="../" />/<Property name="jetty.keystore" default="keystore.jks"/></Set>
+        <Set name="KeyStorePath"><SystemProperty name="jetty.base" default="../" />/<Property name="jetty.keystore" default="magnolia-jetty-webapp/src/main/jetty-config/http2/keystore.jks"/></Set>
         <Set name="KeyStorePassword"><Property name="jetty.keystore.password" default="storepwd"/></Set>
         <Set name="KeyManagerPassword"><Property name="jetty.keymanager.password" default="storepwd"/></Set>
-        <Set name="TrustStorePath"><SystemProperty name="jetty.base" default="../" />/<Property name="jetty.truststore" default="truststore.jks"/></Set>
+        <Set name="TrustStorePath"><SystemProperty name="jetty.base" default="../" />/<Property name="jetty.truststore" default="magnolia-jetty-webapp/src/main/jetty-config/http2/truststore.jks"/></Set>
         <Set name="TrustStorePassword"><Property name="jetty.truststore.password" default="storepwd"/></Set>
         <Set name="EndpointIdentificationAlgorithm"></Set>
         <Set name="NeedClientAuth"><Property name="jetty.ssl.needClientAuth" default="false"/></Set>
