@@ -46,16 +46,16 @@
 		</dependency>
 
 
-<dependency>
-        <groupId>com.google.inject</groupId>
-        <artifactId>guice</artifactId>
-        <version>3.0</version>
-    </dependency>
-    <dependency>
-        <groupId>com.google.inject.extensions</groupId>
-        <artifactId>guice-servlet</artifactId>
-        <version>3.0</version>
-    </dependency>
+		<dependency>
+	        <groupId>com.google.inject</groupId>
+	        <artifactId>guice</artifactId>
+	        <version>3.0</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>com.google.inject.extensions</groupId>
+	        <artifactId>guice-servlet</artifactId>
+	        <version>3.0</version>
+	    </dependency>
     
 	</dependencies>
 
@@ -79,17 +79,12 @@
 					<webAppConfig>
 						<contextPath>/magnoliaAuthor</contextPath>
 					</webAppConfig>
-					
-					<!-- this must run on HTTP/2  ::: https://localhost:8443/magnoliaAuthor/demo-project -->
-					
 					<jettyXml>${jetty.config}/jetty.xml</jettyXml>
 					<jvmArgs>-Xbootclasspath/p:${settings.localRepository}/org/mortbay/jetty/alpn/alpn-boot/${jetty.alpn.version}/alpn-boot-${jetty.alpn.version}.jar</jvmArgs>
 					<contextXml>${jetty.config}/jetty-context.xml</contextXml>
 				</configuration>
 				
-				 <!-- Transitive dependencies -->
-                    
-                    
+				<!-- Transitive dependencies -->
 				<dependencies>
 					<dependency>
                         <groupId>org.slf4j</groupId>

@@ -40,16 +40,8 @@
 			<type>war</type>
 		</dependency>
 		
-		
 		-->
-		
-		
-		<!-- ALPN boot -->
-		<dependency>
-			<groupId>org.mortbay.jetty.alpn</groupId>
-			<artifactId>alpn-boot</artifactId>
-			<version>${jetty.alpn.version}</version>
-		</dependency>
+
 
 	</dependencies>
 
@@ -72,30 +64,9 @@
 				<configuration>
 					<webAppConfig>
 						<contextPath>/magnoliaAuthor</contextPath>
-					</webAppConfig>
-					
-					<!-- this must run on HTTP/2  ::: https://localhost:8443/magnoliaAuthor/demo-project -->
-					
+					</webAppConfig>					
 					<jettyXml>${jetty.config}/jetty.xml,${jetty.config}/jetty-http.xml,${jetty.config}/jetty-ssl.xml,${jetty.config}/jetty-https.xml</jettyXml>
-
-					<!-- 
-					<jvmArgs>-Xbootclasspath/p:${settings.localRepository}/org/mortbay/jetty/alpn/alpn-boot/${jetty.alpn.version}/alpn-boot-${jetty.alpn.version}.jar</jvmArgs>
-					 -->
 				</configuration>
-				
-				<!-- http2 dependencies -->
-				<dependencies>
-					<dependency>
-						<groupId>org.eclipse.jetty.http2</groupId>
-						<artifactId>http2-server</artifactId>
-						<version>${jetty.version}</version>
-					</dependency>
-					<dependency>
-						<groupId>org.eclipse.jetty</groupId>
-						<artifactId>jetty-alpn-server</artifactId>
-						<version>${jetty.version}</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 
 		</plugins>

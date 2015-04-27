@@ -47,6 +47,9 @@
     </context-param>
   -->
   <!-- 
+  ***
+  *** jetty sees a duplicate JSP binding. This is commented, but it should work with last jetty-context.xml config 
+  ***
   <jsp-config>
     <jsp-property-group>
       <url-pattern>*.jsp</url-pattern>
